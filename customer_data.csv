@@ -1,0 +1,9 @@
+customer_id,customer_name,email,city,membership_type,purchase_amount
+101,Aarav Sharma,aarav.sharma@gmail.com,Mumbai,Premium,12000
+102,Priya Verma,priya.verma@yahoo.com,Pune,Gold,9500
+103,Rahul Mehta,rahul.mehta@outlook.com,Delhi,Silver,7000
+104,Sneha Iyer,sneha.iyer@gmail.com,Bangalore,Premium,15000
+105,Karan Patel,karan.patel@gmail.com,Ahmedabad,Gold,11000
+106,Neha Singh,neha.singh@yahoo.com,Hyderabad,Silver,6500
+107,Vikram Rao,vikram.rao@outlook.com,Chennai,Premium,17000
+108,Ananya Das,ananya.das@gmail.com,Kolkata,Gold,9800
