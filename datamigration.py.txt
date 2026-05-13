@@ -1,0 +1,38 @@
+
+df = pd.read_csv("customer_data.csv")
+
+print("Raw Data")
+print(df)
+
+# TRANSFORM
+
+
+# Remove duplicate records
+df = df.drop_duplicates()
+
+# Handle missing values
+df["membership_type"] = df["membership_type"].fillna("Unknown")
+
+# Standardize column names
+df.columns = df.columns.str.lower()
+
+# Convert city names to uppercase
+df["city"] = df["city"].str.upper()
+
+# Create new column
+df["discount"] = df["purchase_amount"] * 0.10
+
+# Filter invalid records
+df = df[df["purchase_amount"] > 0]
+
+print("\nTransformed Data")
+print(df)
+
+# -------------------------------
+# LOAD
+# -------------------------------
+
+# Save transformed data
+df.to_csv("processed_customer_data.csv", index=False)
+
+print("\nData migration completed successfully")
